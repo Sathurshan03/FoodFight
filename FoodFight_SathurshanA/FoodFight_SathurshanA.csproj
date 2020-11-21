@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{746E3E76-5BF6-434C-AADD-DF6E75DCB5ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FoodFight_SathurshanA</RootNamespace>
+    <AssemblyName>FoodFight_SathurshanA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FoodFight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodFight.Designer.cs">
+      <DependentUpon>FoodFight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScores.Designer.cs">
+      <DependentUpon>HighScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pictures.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Username.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Username.Designer.cs">
+      <DependentUpon>Username.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinResults.Designer.cs">
+      <DependentUpon>WinResults.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FoodFight.resx">
+      <DependentUpon>FoodFight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScores.resx">
+      <DependentUpon>HighScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Pictures.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Username.resx">
+      <DependentUpon>Username.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinResults.resx">
+      <DependentUpon>WinResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Milkshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RocketShip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hitpoints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LazarDamage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseHealth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RocketSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GainHealth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObstacleSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy-with-a-chance-of-meatballs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-gold-old-buttons-game-web-design_172107-619.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-buttons-game-buttons-button-icon-png-image-and-clipart-buttons-png-260_260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpArrow.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
