@@ -1,5 +1,5 @@
 # FoodFight
-This is a game that I created at the end of my grade 10 ICS course. 
+This is a game that I created at the end of my grade 11 ICS course to demonstrate my learning to myself, and challenge my learning. 
 The purpose was to make a game using all the components that I learned in that year. 
 I have learned how to use arrays, loops, writing/reading files, and bubble sort.
 This code is very inefficient since I did not know about ADT and OOP. 
